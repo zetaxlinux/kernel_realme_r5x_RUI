@@ -1,4 +1,4 @@
-make clean ; make mrproper ; git submodule init ; git submodule update ;
+make clean ; make mrproper
 #!/bin/bash
 
 echo -e "==========================="
