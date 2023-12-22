@@ -18,8 +18,8 @@ done
 
 DEFCONFIG="vendor/R5X_defconfig"
 export KBUILD_BUILD_USER=t.me/@zetaxlinux
-export KBUILD_BUILD_HOST=Enderman
-TC_DIR="/workspace/clang"
+export KBUILD_BUILD_HOST=Herobrine
+TC_DIR="/workspace/gitpod/clang-r510928"
 export PATH="$TC_DIR/bin:$PATH"
 
 if [[ $1 = "-r" || $1 = "--regen" ]]; then
