@@ -18,7 +18,7 @@ done
 
 DEFCONFIG="vendor/R5X_defconfig"
 export KBUILD_BUILD_USER=t.me/@zetaxlinux
-export KBUILD_BUILD_HOST=silont-project
+export KBUILD_BUILD_HOST=Enderman
 TC_DIR="/workspace/clang"
 export PATH="$TC_DIR/bin:$PATH"
 
