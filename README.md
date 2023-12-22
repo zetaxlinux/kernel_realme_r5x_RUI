@@ -1,1 +1,1 @@
-# kernel_realme_trinket
+# kernel_realme_r5x
