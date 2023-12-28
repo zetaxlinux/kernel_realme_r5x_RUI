@@ -1,9 +1,14 @@
 make clean ; make mrproper
 #!/bin/bash
 
-echo -e "==========================="
-echo -e "= START COMPILING KERNEL  ="
-echo -e "==========================="
+echo -e "\033[93m==========================="
+echo -e "\033[93m= START COMPILING KERNEL  ="
+echo -e "\033[93m==========================="
+echo
+echo -e -n "\033[93m\033[104mPRESS ENTER TO CONTINUE\033[0m"
+read P
+echo  $P
+
 bold=$(tput bold)
 normal=$(tput sgr0)
 
@@ -15,11 +20,12 @@ while (( ${#} )); do
     shift
 done
 [[ -z ${ZIP} ]] && { echo "${bold}LOADING-_-....${normal}"; }
+echo
 
 DEFCONFIG="vendor/R5X_defconfig"
 export KBUILD_BUILD_USER=t.me/@zetaxlinux
 export KBUILD_BUILD_HOST=Herobrine
-TC_DIR="/workspace/gitpod/clang-r510928"
+TC_DIR="/workspace/gitpod/clang-r498229b"
 export PATH="$TC_DIR/bin:$PATH"
 
 if [[ $1 = "-r" || $1 = "--regen" ]]; then
