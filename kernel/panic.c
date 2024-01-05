@@ -613,8 +613,6 @@ void __warn(const char *file, int line, void *caller, unsigned taint,
 	if (args)
 		vprintk(args->fmt, args->args);
 
-	check_panic_on_warn("kernel");
-
 	print_modules();
 
 	if (regs)
