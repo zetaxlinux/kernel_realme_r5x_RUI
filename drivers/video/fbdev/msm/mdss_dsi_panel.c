@@ -27,7 +27,7 @@
 #include "mdss_dba_utils.h"
 #endif
 #define DT_CMD_HDR 6
-#define MIN_REFRESH_RATE 48
+#define MIN_REFRESH_RATE 53
 #define DEFAULT_MDP_TRANSFER_TIME 14000
 
 #define VSYNC_DELAY msecs_to_jiffies(17)
